@@ -1,0 +1,5 @@
+<h1>{{ question.question_text }} 결과창</h1>
+
+{% for q in question.choice_set.all %}
+    <p>choice_title : {{q}} votes : {{q.votes}}</p>
+{% endfor %}
